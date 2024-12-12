@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidJS Runtime Global Example</title>
+</head>
+<body>
+    <div id="app"></div>
+</body>
+</html>
+<script src="solid-js-dev.umd.js"></script>
+<script>
+  const { createSignal, html, render } = SolidJS;
+
+  const App = () => {
+    const [counter, setCounter] = createSignal(0);
+    setInterval(() => setCounter(c => c + 1), 1000);
+    return html`<div>${() => counter()}</div>`;
+  }
+  render(App, document.body);
+</script>
