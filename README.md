@@ -1,7 +1,6 @@
 # SolidJS Web
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![SolidJS Version](https://img.shields.io/github/package-json/dependency-version/solidjs-web/solid-js?color=magenta)](https://www.solidjs.com/)
 [![Build Status](https://img.shields.io/github/actions/workflow/status/solidjs-web/SolidJS-Web/build.yml?branch=main)](https://github.com/solidjs-web/SolidJS-Web/actions)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://prettier.io/)
 
@@ -36,11 +35,31 @@ With **SolidJS Web**, you can quickly bootstrap a new SolidJS project that encou
 Ensure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (LTS recommended)
-- [pnpm](https://pnpm.io/) or [npm](https://www.npmjs.com/) (pnpm recommended)
+- [npm](https://www.npmjs.com/)
 
-### Installation
+### Local Generation
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/solidjs-web/SolidJS-Web.git
    cd SolidJS-Web
+   ```  
+
+2. **Modify src/main.js as needed.**
+
+3. **Run the following**
+   ```bash
+   npm install
+   npm run build:prod
+   npm run build:dev
+   ```
+
+### Remote Generation
+
+ 1. **Fork this repo**
+ 
+ 2. **Modify src/main.js as needed.**
+ 
+ 3. **Run the GitHub Action "Manual Build with Vite"**
+
+ 4. **Download the Artifacts**
