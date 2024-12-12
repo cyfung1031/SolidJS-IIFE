@@ -1,1 +1,1 @@
-console.log('Hello from Rollup!');
+console.log('Hello from Vite!');
