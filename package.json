@@ -2,8 +2,8 @@
     "name": "vite-test",
     "version": "1.0.0",
     "scripts": {
-        "build:prod": "vite build --outDir dist-prod",
-        "build:dev": "vite build --outDir dist-dev"
+        "build:prod": "vite build -c vite.prod.config.js --outDir dist-prod",
+        "build:dev": "vite build -c vite.dev.config.js --outDir dist-dev"
     },
     "devDependencies": {
         "vite": "^6.0.3",
