@@ -1,4 +1,6 @@
-(function() {
+(function(global, factory) {
+  typeof exports === "object" && typeof module !== "undefined" ? module.exports = factory() : typeof define === "function" && define.amd ? define(factory) : (global = typeof globalThis !== "undefined" ? globalThis : global || self, global.SolidJS = factory());
+})(this, function() {
   "use strict";
   let taskIdCounter = 1, isCallbackScheduled = false, isPerformingWork = false, taskQueue = [], currentTask = null, shouldYieldToHost = null, yieldInterval = 5, deadline = 0, maxYieldInterval = 300, scheduleCallback = null, scheduledCallback = null;
   const maxSigned31BitInt = 1073741823;
@@ -2282,5 +2284,5 @@ return _$el${id};
     createDeferred,
     createRenderEffect
   };
-  self.SolidJS = SolidJS;
-})();
+  return SolidJS;
+});
