@@ -6,10 +6,11 @@
         "build:dev": "vite build -c vite.dev.config.mjs --outDir dist-dev"
     },
     "devDependencies": {
-        "vite": "^6.0.3",
-        "solid-js": "1.9.3",
-        "solid-element": "1.9.1",
         "hyper-dom-expressions": "0.39.4",
-        "lit-dom-expressions": "0.39.4"
+        "lit-dom-expressions": "0.39.4",
+        "solid-element": "1.9.1",
+        "solid-js": "1.9.3",
+        "vite": "^6.0.3",
+        "terser": "^5.37.0"
     }
 }
