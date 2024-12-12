@@ -63,3 +63,49 @@ Ensure you have the following installed:
  3. **Run the GitHub Action "Manual Build with Vite"**
 
  4. **Download the Artifacts**
+
+
+ ## Demo Source Code
+
+ There are only two ways for the use of SolidJS HTMLElement Template.
+ 1. Tagged Template Literals (Recommended)
+    - `import html from 'solid-js/html';`
+    - ```js
+        html`<div>${() => counter()}</div>`
+      ```
+ 2. HyperScript
+    - `import h from 'solid-js/h';`
+    - ```js
+        h('div', () => counter())
+      ```
+
+ ### Tagged Template Literals (Recommended)
+
+    ```html
+      <script src="solid-js-prod.js"></script>
+      <script>
+        const { createSignal, html, render } = SolidJS;
+        const App = () => {
+          const [counter, setCounter] = createSignal(0);
+          setInterval(() => setCounter(c => c + 1), 1000);
+          return html`<div>${() => counter()}</div>`;
+        }
+        render(App, document.body);
+      </script>
+    ```
+
+
+ ### HyperScript
+
+    ```html
+      <script src="solid-js-prod.js"></script>
+      <script>
+        const { createSignal, h, render } = SolidJS;
+        const App = () => {
+          const [counter, setCounter] = createSignal(0);
+          setInterval(() => setCounter(c => c + 1), 1000);
+          return h('div', () => counter());
+        }
+        render(App, document.body);
+      </script>
+    ```
