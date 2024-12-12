@@ -15,7 +15,7 @@ export default defineConfig({
       lib: {
         entry: 'src/main.js',
         name: 'SolidJS',
-        fileName: (format, entryName) => 'solid-js-prod',
+        fileName: (format, entryName) => 'solid-js-prod.js',
         formats: ['iife']
       }
       // Default outDir is "dist"
