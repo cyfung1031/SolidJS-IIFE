@@ -33,7 +33,8 @@ const SolidJS = {
     createRenderEffect
 }
 
-return SolidJS
+
+export default SolidJS;
 // self.SolidJS = SolidJS;
 
 /** @typedef { typeof SolidJS } SolidJS */
