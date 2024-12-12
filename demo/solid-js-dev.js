@@ -1,6 +1,4 @@
-(function(factory) {
-  typeof define === "function" && define.amd ? define(factory) : factory();
-})(function() {
+(function() {
   "use strict";
   let taskIdCounter = 1, isCallbackScheduled = false, isPerformingWork = false, taskQueue = [], currentTask = null, shouldYieldToHost = null, yieldInterval = 5, deadline = 0, maxYieldInterval = 300, scheduleCallback = null, scheduledCallback = null;
   const maxSigned31BitInt = 1073741823;
@@ -2175,4 +2173,4 @@ return _$el${id};
     createRenderEffect
   };
   self.SolidJS = SolidJS;
-});
+})();
