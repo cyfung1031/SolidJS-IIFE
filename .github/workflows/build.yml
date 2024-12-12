@@ -16,7 +16,7 @@ jobs:
           node-version: '18.x'
 
       - name: Install dependencies
-        run: npm install  # ensure package-lock.json is present if using npm ci
+        run: npm ci  # ensure package-lock.json is present if using npm ci
 
       - name: Build production (minified)
         run: npm run build:prod
