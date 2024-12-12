@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "scripts": {
       "build:prod": "vite build --minify true --outDir dist-prod",
-      "build:nonmin": "vite build --minify false --outDir dist-dev"
+      "build:dev": "vite build --minify false --outDir dist-dev"
     },
     "devDependencies": {
       "vite": "^4.0.0"
