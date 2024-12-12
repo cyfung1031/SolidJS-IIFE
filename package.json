@@ -2,8 +2,8 @@
     "name": "vite-test",
     "version": "1.0.0",
     "scripts": {
-        "build:prod": "vite build -c vite.prod.config.mjs --outDir dist",
-        "build:dev": "vite build -c vite.dev.config.mjs --outDir dist"
+        "build:prod": "vite build -c vite.prod.config.mjs --outDir dist-prod",
+        "build:dev": "vite build -c vite.dev.config.mjs --outDir dist-dev"
     },
     "devDependencies": {
         "hyper-dom-expressions": "0.39.4",

@@ -27,5 +27,11 @@ jobs:
       - name: Upload minified artifact
         uses: actions/upload-artifact@v4
         with:
-          name: solid-js-web
-          path: dist/
+          name: solidjs-prod
+          path: dist-prod/
+
+      - name: Upload non-minified artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: solidjs-dev
+          path: dist-dev/
