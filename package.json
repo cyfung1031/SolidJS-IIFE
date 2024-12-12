@@ -2,10 +2,14 @@
     "name": "vite-test",
     "version": "1.0.0",
     "scripts": {
-      "build:prod": "vite build --minify true --outDir dist-prod",
-      "build:dev": "vite build --minify false --outDir dist-dev"
+        "build:prod": "vite build --outDir dist-prod",
+        "build:dev": "vite build --outDir dist-dev"
     },
     "devDependencies": {
-      "vite": "^6.0.3"
+        "vite": "^6.0.3",
+        "solid-js": "1.9.3",
+        "solid-element": "1.9.1",
+        "hyper-dom-expressions": "0.39.4",
+        "lit-dom-expressions": "0.39.4"
     }
-  }
+}
