@@ -2,12 +2,15 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
     build: {
-      minify: "terser",
-      target: "esnext",
-      cssCodeSplit: false,
-      terserOptions: {
-        keep_classnames: true,
-        keep_fnames: true,
+      minify: "esbuild",
+      target: 'es2015',
+      cssCodeSplit: true,
+      esbuild: {
+        // Set to true to enable advanced minification options
+        minifySyntax: true,  // Minifies syntax (removes extra spaces, etc.)
+        minifyWhitespace: true,  // Minifies whitespace
+        minifyIdentifiers: true, // Shortens variable and function names
+        // You can add additional esbuild-specific options here
       },
       lib: {
         entry: 'src/main.js',
