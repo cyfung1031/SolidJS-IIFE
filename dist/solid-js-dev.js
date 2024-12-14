@@ -2271,6 +2271,7 @@ return _$el${id};
     render,
     h,
     createStore,
+    unwrap,
     // withSolid,
     // customElement,
     For,
